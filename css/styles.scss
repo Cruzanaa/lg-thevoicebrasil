@@ -43,27 +43,32 @@ main {
 .container {
     width: 90%;
     margin: 0 auto;
-  
-    header {
-        display: flex;
-        justify-content: center;
-    }
- }
+}
 
+header {
+    display: flex;
+    justify-content: center;
+    .logo {
+        margin-top: 20vh;
+        width: 25%;
+    }
+
+}
+ 
 .sessao-times {
-    margin-top: 90vh;
+    margin-top: 40vh;
     h1 {
         font-size: 20px;
         text-align: center;
         font-family: "SourceSansRegular";
     }
-    .apresentadores {
-        display: flex;
-        position: absolute;
-        right: 0;
-        left: 0;
-    }
+  
+    
+        
+    
 }
+
+
 
  
 .container-form {
@@ -72,14 +77,18 @@ main {
     margin-top: 10vh;
     display: flex;
     justify-content: center;
+   
 }
 .formulario {
-    background-image: url(/assets/imgs/fio-background.png);
-    background-position: center;
+    // background-image: url(/assets/imgs/fio-background.png);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
     min-height: 100vh;
+    margin-top: 150vh;
+}
+.fomr-validate {
+    width: 30%;
 }
 
 .mosaico {
@@ -97,17 +106,32 @@ label {
     flex-direction: column;
 }
 
-/* Full-width input fields */
-// input[type=text], input[type=password] {
-//     width: 100%;
-//     padding: 15px;
-//     margin: 5px 0 22px 0;
-//     display: inline-block;
-//     border: none;
-//     background: #f1f1f1;
-//   }
+
+
+.form-idade {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    color: $roxo;
+}
+
+
+ input[class=form-nome] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    color: $roxo;
+  }
+  input[class=form-idade] {
+    width: 14vw;
+    height: 6vh;
+  }
   
-  input[type=text]:focus, input[type=password]:focus {
+  input[type=text]:focus {
     background-color: #ddd;
     outline: none;
   }
@@ -159,12 +183,47 @@ label {
   
 //  MEDIA QUERIES ---------------------------------------------------------------/
 
-@media (max-width: 1000px) {
+@media (min-width: 900px) {
 
+    .apresentadores {
+        display: flex;
+        position: absolute;
+        right: 0;
+        left: 0;
+        .time {
+            position: relative;
+            .bloco-apresentador {
+                position: absolute;
+                &:nth-of-type(2) {
+                    left: 24vw;
+                }
+                &:nth-of-type(3) {
+                    left: 50vw;
+                }
+            }
+        }
+        }
 }
 
 @media (max-width: 700px) {
-
+.apresentadores {
+    .time {
+        .bloco-apresentador {
+            &:nth-of-type(1) {
+                width: 30%;
+                left: 10vw;
+            }
+            &:nth-of-type(2) {
+                width: 30%;
+                left: 10vw;
+            }
+            &:nth-of-type(3) {
+                width: 20%;
+                left: 10vw;
+            }
+        }
+    }
+    }
 }
 @media (max-width: 600px) {
 
