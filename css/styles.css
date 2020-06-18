@@ -68,7 +68,6 @@ header .logo {
 .container-form {
   width: 90%;
   margin: 0 auto;
-  margin-top: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,6 +84,21 @@ header .logo {
 .formulario .form-validate {
   width: 40%;
 }
+.formulario .form-validate .form-group .bloco-destaque {
+  display: flex;
+  justify-content: space-between;
+}
+.formulario .form-validate .form-group .sessao-form {
+  display: grid;
+}
+.formulario .form-validate .form-group .bloco-times {
+  display: flex;
+  flex-direction: column;
+}
+.formulario .form-validate .form-group option {
+  background-color: #0D0817;
+  color: #ffff;
+}
 
 label {
   font-family: "SourceSansRegular";
@@ -92,32 +106,39 @@ label {
   font-size: 1em;
 }
 
-input[class=form-nome] {
+input[class=form-nome], [class=form-times] {
   width: 100%;
   padding: 10px;
   margin: 5px 0 22px 0;
   display: inline-block;
 }
 
-.form-idade, .form-cidade, .form-estado {
+.form-nome, .form-idade, .form-cidade, .form-estado, .form-times {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
-  color: #411340;
+  color: #ffff;
+  font-family: "SourceSansRegular";
+  font-size: 1em;
 }
 
 input[class=form-idade] {
-  width: 6vw;
+  width: 10vw;
   height: 6vh;
 }
 
-input[class=form-cidade], [class=form-idade] {
+input[class=form-cidade] {
+  width: 20vw;
+  height: 6vh;
+}
+
+input[class=form-idade] {
   width: 9vw;
   height: 6vh;
 }
 
 input[type=text]:focus {
-  background-color: #ddd;
+  background-color: #0D0817;
   outline: none;
 }
 
@@ -227,9 +248,9 @@ input[type=text]:focus {
     display: flex;
     flex-direction: column;
   }
-  .formulario .form-validate input[class=form-idade] {
-    width: 100%;
-    height: 6vh;
+  .formulario .form-validate input[class=form-idade], .formulario .form-validate [class=form-cidade] {
+    width: auto;
+    height: 15vh;
   }
   .formulario .form-validate #estados {
     width: 100%;
@@ -254,6 +275,11 @@ input[type=text]:focus {
   .formulario .form-validate option {
     background-color: #0D0817;
     color: #ffff;
+  }
+
+  .formulario .form-validate .form-group .bloco-destaque {
+    display: block;
+    justify-content: space-between;
   }
 }
 
