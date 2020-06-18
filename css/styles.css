@@ -159,29 +159,56 @@ input[type=text]:focus {
   opacity: 1;
 }
 
-.mosaico {
+.container-mosaico {
   background-color: #0D0817;
   width: 100%;
   min-width: 100%;
+  margin-top: 10vh;
 }
-.mosaico .caixa-mosaico {
+.container-mosaico h2 {
+  color: #0D0817 !important;
+  font-family: "SourceSansBold";
+  text-align: center;
+  font-size: 8em;
+}
+.container-mosaico .caixa-mosaico {
   width: 70%;
   margin: 0 auto;
+  margin-top: 7vh;
+}
+.container-mosaico .caixa-mosaico .mosaico-fas {
   display: flex;
   flex-wrap: wrap;
 }
-.mosaico .caixa-mosaico .mosaico-fas {
-  background-color: red;
-  background: linear-gradient(0deg, rgba(239, 13, 97, 0.42), rgba(239, 13, 97, 0.42)), url(/assets/imgs/mosaico/ana-mosaico.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  width: 20vw;
-  height: 20vh;
-  margin-right: 2vw;
+.container-mosaico .caixa-mosaico .mosaico-fas img {
+  width: 100%;
+}
+.container-mosaico .caixa-mosaico .mosaico-fas .informacao-fas {
+  background: black;
+  width: 20%;
+}
+.container-mosaico .caixa-mosaico .mosaico-fas .informacao-fas .info-pessoal {
+  display: flex;
+  justify-content: space-around;
+}
+.container-mosaico .caixa-mosaico .mosaico-fas .informacao-fas .info-pessoal h3, .container-mosaico .caixa-mosaico .mosaico-fas .informacao-fas .info-pessoal p {
+  color: #ffff;
+  opacity: 30%;
+  font-family: "SourceSansLight";
+}
+.container-mosaico .caixa-mosaico .mosaico-fas .informacao-fas .info-pessoal h3 {
+  font-size: 1em;
+}
+.container-mosaico .caixa-mosaico .mosaico-fas .informacao-fas .info-pessoal p {
+  font-size: 0.8em;
+}
+.container-mosaico .caixa-mosaico .mosaico-fas .informacao-fas .fa-time {
+  font-family: "SourceSansBold";
+  color: #EF0D61;
+  font-size: 1.4em;
 }
 
 .footer {
-  background-color: #0D0817;
   width: 100%;
   height: 50vh;
   border: 2px solid #FFFFFF;
