@@ -92,14 +92,18 @@ label {
   font-size: 1em;
 }
 
+.form-idade {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  color: #411340;
+}
+
 input[class=form-nome] {
   width: 100%;
   padding: 10px;
   margin: 5px 0 22px 0;
   display: inline-block;
-}
-
-.form-idade, .form-cidade, .form-estado {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
@@ -111,16 +115,18 @@ input[class=form-idade] {
   height: 6vh;
 }
 
-input[class=form-cidade], [class=form-idade] {
-  width: 9vw;
-  height: 6vh;
-}
-
 input[type=text]:focus {
   background-color: #ddd;
   outline: none;
 }
 
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
 .btn-enviar {
   background-color: #EF0D61;
   color: white;
@@ -136,6 +142,22 @@ input[type=text]:focus {
 
 .btn-enviar:hover {
   opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.sessao-form {
+  display: flex;
+  flex-direction: column;
 }
 
 .mosaico {
@@ -257,4 +279,4 @@ input[type=text]:focus {
   }
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=stlyes.css.map */

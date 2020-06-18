@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Voice Brasil</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
 	rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -18,60 +18,144 @@
         </article>
 
 
-        <section class="container sessao-times">
-            <!--h1>Qual seu time?</h1-->
+        <!-- <section class="container sessao-times">
+            <h1>Qual seu time?</h1>
 
-            <!--div class="apresentadores">
+            <div class="apresentadores">
                 <div class="time">
-                    <img class="bloco-apresentador" src="assets/imgs/michel-telo.png" alt="">
-                    <img class="bloco-apresentador" src="assets/imgs/michel-telo.png" alt="">
-                    <img class="bloco-apresentador" src="assets/imgs/michel-telo.png" alt="">
-                </div-->   
+                    <img class="bloco-apresentador" src="assets/imgs/michel-telo.png" alt="Michel Telo sorrindo">
+                    <img class="bloco-apresentador" src="assets/imgs/ivete-sangalo.jpg" alt="Ivete Sangalo sorrindo">
+                    <img class="bloco-apresentador" src="assets/imgs/lulu-santos.jpg" alt="Lulu Santos sorrindo">
+                    <img class="bloco-apresentador" src="assets/imgs/iza.jpg" alt="Iza sorrindo">
+                    <img class="bloco-apresentador" src="assets/imgs/michel-telo.png" alt="Michel Telo sorrindo">
+                </div>   
             </div>
-        </section>
+        </section> -->
 
         <section class="container-form formulario">
-            <form action="" method="post" id="#" name="#" class="fomr-validate" target="_blank">
+            <form action="" method="post" name="#" class="form-validate" target="_blank">
                 <div class="form-group">
-                    <div class="form-bloco">
+                    <span class="form-bloco">
                         <label for="nome">Nome:</label>
-                        <input type="text" class="form-nome" placeholder="Enter Email" name="email" id="email"  value="Nome" required>
-                    </div>
-                    <div class="form-bloco">
-                        <label for="nome">Idade:</label>
-                        <input type="text" class="form-idade" placeholder="Enter Email" name="email" id="email"  value="nome" required>
-                    </div>
-                    <div class="form-bloco">
-                        <label for="nome">Nome:</label>
-                        <input type="text" class="form-nome" placeholder="Enter Email" name="email" id="email"  value="nome" required>
-                    </div>
+                          <input type="text" class="form-nome" placeholder="nome" 
+                            name="email" id="email"  value="Nome" required>
+                    </span>
 
-                    <label for="cars">Choose a car:</label>
-                    <select id="cars" name="carlist" form="carform">
-                      <option value="volvo">Volvo</option>
-                      <option value="saab">Saab</option>
-                      <option value="opel">Opel</option>
-                      <option value="audi">Audi</option>
-                    </select>
+                    <div class="form-bloco">
+                        <span class="sessao-form">
+                            <label for="nome">Idade:</label>
+                                <input type="text" class="form-idade" placeholder="idade" 
+                                name="idade" id="eidade"  value="Idade" required>
+                        </span>
+
+                        <span class="sessao-form">
+                            <label for="cidade">Cidade:</label>
+                                <input type="text" class="form-cidade" 
+                                name="cidade" id="cidade" required>
+                        </span>
+                    
+                    
+                        <label for="estados">Estados:</label>
+                            <select id="estados" name="estados" form="" class="form-estado">
+                                <option value="AC">AC</option>
+                                <option value="AL">AL</option>
+                                <option value="AP">AP</option>
+                                <option value="AM">AM</option>
+                                <option value="BA">BA</option>
+                                <option value="CE">CE</option>
+                                <option value="DF">DF</option>
+                                <option value="ES">ES</option>
+                                <option value="GO">GO</option>
+                                <option value="MA">MA</option>
+                                <option value="MT">MT</option>
+                                <option value="MS">MS</option>
+                                <option value="PA">PA</option>
+                                <option value="PB">PB</option>
+                                <option value="PR">PR</option>
+                                <option value="PE">PE</option>
+                                <option value="PI">PI</option>
+                                <option value="RJ">RJ</option>
+                                <option value="RN">RN</option>
+                                <option value="RS">RS</option>
+                                <option value="RO">RO</option>
+                                <option value="RR">RR</option>
+                                <option value="SC">SC</option>
+                                <option value="SP">SP</option>
+                                <option value="SE">SE</option>
+                                <option value="TO">TO</option>
+                            </select>
+                    </div>
                  
                     <div class="form-bloco">
-                         <label for="country">Country</label>
-                            <select id="country" name="country">
-                                <option value="australia">Australia</option>
-                                <option value="canada">Canada</option>
-                                <option value="usa">USA</option>
+                         <label for="team">Time</label>
+                            <select id="times" name="times">
+                                <option value="team-michel" style="background-color: yellow;">Michel Telo</option>
+                                <option value="team-ivete">Ivete Sangalo</option>
+                                <option value="team-lulu">Lulu Santos</option>
+                                <option value="team-iza">IZA</option>
                             </select>
-                     </div>
+                    </vid>
                         
-                        <button type="submit" class="registerbtn">Register</button>
+                        <button type="submit" class="btn-enviar">Enviar</button>
                     </div>
                 </div>
             </form>
         </section>
 
         <article class="mosaico">
+            <section class="caixa-mosaico">
+                <div class="mosaico-fas">
+                    <!-- <h2>Nome</h2>
+                    <h3>Idade</h3>
+                    <h4>Cidade</h4>
+                    <h5>Estadp</h5>
+                    <span>Time:</span> -->
+                </div> 
+                <div class="mosaico-fas">
+                    <!-- <h2>Nome</h2>
+                    <h3>Idade</h3>
+                    <h4>Cidade</h4>
+                    <h5>Estadp</h5>
+                    <span>Time:</span> -->
+                </div> 
+                <div class="mosaico-fas">
+                    <!-- <h2>Nome</h2>
+                    <h3>Idade</h3>
+                    <h4>Cidade</h4>
+                    <h5>Estadp</h5>
+                    <span>Time:</span> -->
+                </div> 
+            </section>
+
+            <section class="caixa-mosaico">
+                <div class="mosaico-fas">
+                    <!-- <h2>Nome</h2>
+                    <h3>Idade</h3>
+                    <h4>Cidade</h4>
+                    <h5>Estadp</h5>
+                    <span>Time:</span> -->
+                </div> 
+                <div class="mosaico-fas">
+                    <!-- <h2>Nome</h2>
+                    <h3>Idade</h3>
+                    <h4>Cidade</h4>
+                    <h5>Estadp</h5>
+                    <span>Time:</span> -->
+                </div> 
+                <div class="mosaico-fas">
+                    <!-- <h2>Nome</h2>
+                    <h3>Idade</h3>
+                    <h4>Cidade</h4>
+                    <h5>Estadp</h5>
+                    <span>Time:</span> -->
+                </div> 
+            </section>
 
         </article>
+
+        <footer class="footer">
+
+        </footer>
 
     </main>
  
