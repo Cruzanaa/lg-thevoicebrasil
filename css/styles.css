@@ -36,18 +36,22 @@ main {
   margin: 0 auto;
 }
 
-header {
+header .fundo-header {
   display: flex;
   justify-content: center;
+  align-items: center;
+  background-image: url(/assets/imgs/fio-background.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 104%;
+  width: 100%;
+  height: 100vh;
 }
 header .logo {
   margin-top: 20vh;
   width: 25%;
 }
 
-.sessao-times {
-  margin-top: 40vh;
-}
 .sessao-times h1 {
   font-size: 2em;
   text-align: center;
@@ -94,7 +98,7 @@ header .logo {
   background-size: 100%;
   width: 100%;
   min-height: 100vh;
-  margin-top: 70vh;
+  margin-top: -3vh;
 }
 .formulario .form-validate {
   width: 40%;
@@ -175,15 +179,15 @@ input[type=text]:focus {
 }
 
 .container-mosaico {
-  background-color: #0D0817;
   width: 100%;
   min-width: 100%;
 }
 .container-mosaico h2 {
-  color: #0D0817 !important;
+  color: #EF0D61 !important;
   font-family: "SourceSansBold";
   text-align: center;
-  font-size: 8em;
+  font-size: 3em;
+  padding: 10vh 0;
 }
 .container-mosaico .caixa-mosaico {
   width: 70%;
@@ -198,7 +202,10 @@ input[type=text]:focus {
   width: 100%;
 }
 .container-mosaico .caixa-mosaico .mosaico-fas .informacao-fas {
+  background: #0D0817;
   width: 20%;
+  margin-bottom: 5vh;
+  margin-left: 2vw;
 }
 .container-mosaico .caixa-mosaico .mosaico-fas .informacao-fas .info-pessoal {
   display: flex;
@@ -218,7 +225,7 @@ input[type=text]:focus {
 .container-mosaico .caixa-mosaico .mosaico-fas .informacao-fas .fa-time {
   font-family: "SourceSansBold";
   color: #EF0D61;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 .footer {
@@ -234,8 +241,6 @@ input[type=text]:focus {
     font-size: 2em;
   }
   .sessao-times .apresentadores {
-    display: flex;
-    position: absolute;
     right: 0;
   }
   .sessao-times .apresentadores .time {
@@ -252,15 +257,17 @@ input[type=text]:focus {
   }
 }
 @media (max-width: 700px) {
-  header {
-    background-image: url(/assets/imgs/luzes.png);
-    background-image: url(/assets/imgs/luzes.png);
-    background-size: 123%;
+  header .fundo-header {
+    background-image: url(/assets/imgs/fio-background.png);
     background-repeat: no-repeat;
-    margin: 0 -27px 0 -15px;
-    margin-left: -15;
-    background-position: top;
-    height: auto;
+    background-position: unset;
+    background-size: 305%;
+    width: 100%;
+    height: 100vh;
+  }
+  header .logo {
+    margin-top: 20vh;
+    width: 25%;
   }
   header .logo {
     width: 50%;
@@ -276,8 +283,8 @@ input[type=text]:focus {
 
   .formulario {
     margin-top: 0;
-    background-size: 200%;
-    background-position: top;
+    background-size: auto;
+    background-position: unset;
   }
   .formulario .form-validate {
     width: 80%;
@@ -289,7 +296,7 @@ input[type=text]:focus {
   }
   .formulario .form-validate input[class=form-idade], .formulario .form-validate [class=form-cidade] {
     width: auto;
-    height: 15vh;
+    height: 5vh;
   }
   .formulario .form-validate #estados {
     width: 100%;
@@ -335,14 +342,6 @@ input[type=text]:focus {
     padding-right: 2vw;
   }
 
-  .container-form {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
   .container-form .texto-form {
     padding-top: 8vh;
   }
@@ -351,8 +350,7 @@ input[type=text]:focus {
     font-family: "SourceSansRegular";
     text-align: center;
     font-size: 1em;
-    padding-top: 8vh;
-    padding: 8vh 4vw;
+    padding: 2vh 8vw;
   }
 }
 
