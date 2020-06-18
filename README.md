@@ -1,2 +1,3 @@
 # lg-thevoicebrasil
-Landign page The Voice Brasil
+Desafio Globo: Landing Page The Voice Brasil.
+
