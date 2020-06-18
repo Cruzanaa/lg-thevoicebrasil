@@ -54,6 +54,10 @@ header .logo {
   color: #ffff;
   font-family: "SourceSansBold";
 }
+.sessao-times .apresentadores time {
+  display: flex;
+  justify-content: center;
+}
 .sessao-times .apresentadores img {
   object-fit: cover;
   border-radius: 2px;
@@ -71,15 +75,26 @@ header .logo {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+.container-form .texto-form {
+  padding: 12vh 0;
+}
+.container-form .texto-form p {
+  color: #ffff;
+  font-family: "SourceSansBold";
+  text-align: center;
+  font-size: 1.2em;
 }
 
 .formulario {
   background-image: url(/assets/imgs/fio-background.png);
   background-repeat: no-repeat;
+  background-position: top;
   background-size: 100%;
   width: 100%;
   min-height: 100vh;
-  margin-top: 150vh;
+  margin-top: 70vh;
 }
 .formulario .form-validate {
   width: 40%;
@@ -163,7 +178,6 @@ input[type=text]:focus {
   background-color: #0D0817;
   width: 100%;
   min-width: 100%;
-  margin-top: 10vh;
 }
 .container-mosaico h2 {
   color: #0D0817 !important;
@@ -184,7 +198,6 @@ input[type=text]:focus {
   width: 100%;
 }
 .container-mosaico .caixa-mosaico .mosaico-fas .informacao-fas {
-  background: black;
   width: 20%;
 }
 .container-mosaico .caixa-mosaico .mosaico-fas .informacao-fas .info-pessoal {
@@ -224,13 +237,12 @@ input[type=text]:focus {
     display: flex;
     position: absolute;
     right: 0;
-    left: 0;
   }
   .sessao-times .apresentadores .time {
     position: relative;
   }
   .sessao-times .apresentadores .time .bloco-apresentador {
-    position: absolute;
+    width: 24%;
   }
   .sessao-times .apresentadores .time .bloco-apresentador:nth-of-type(2) {
     left: 24vw;
@@ -307,6 +319,40 @@ input[type=text]:focus {
   .formulario .form-validate .form-group .bloco-destaque {
     display: block;
     justify-content: space-between;
+  }
+
+  .container-mosaico .caixa-mosaico {
+    width: auto;
+    margin: 0 auto;
+    padding: 13px;
+  }
+  .container-mosaico .caixa-mosaico .mosaico-fas {
+    display: flex;
+    justify-content: center;
+  }
+  .container-mosaico .caixa-mosaico .mosaico-fas .informacao-fas {
+    width: 40%;
+    padding-right: 2vw;
+  }
+
+  .container-form {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container-form .texto-form {
+    padding-top: 8vh;
+  }
+  .container-form .texto-form p {
+    color: #ffff;
+    font-family: "SourceSansRegular";
+    text-align: center;
+    font-size: 1em;
+    padding-top: 8vh;
+    padding: 8vh 4vw;
   }
 }
 

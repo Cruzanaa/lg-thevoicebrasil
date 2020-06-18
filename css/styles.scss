@@ -64,6 +64,11 @@ header {
         font-family: "SourceSansBold";
     }
     .apresentadores {
+        time {
+            display: flex;
+            justify-content: center;
+        }
+       
         img {
             // width: 165px;
             // height: 200px;
@@ -74,8 +79,7 @@ header {
             cursor: pointer;
             &:hover {
               filter: none;
-            }
-        } 
+            }}
     }        
 }
 
@@ -88,14 +92,25 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    .texto-form {
+        padding: 12vh 0;
+        p {
+            color: #ffff;
+            font-family: "SourceSansBold";
+            text-align: center;
+            font-size: 1.2em;
+        }
+    }
 }
 .formulario {
     background-image: url(/assets/imgs/fio-background.png);
     background-repeat: no-repeat;
+    background-position: top;
     background-size: 100%;
     width: 100%;
     min-height: 100vh;
-    margin-top: 150vh;
+    margin-top: 70vh;
     .form-validate {
         width: 40%;
         .form-group {
@@ -181,9 +196,12 @@ input[class=form-nome], [class=form-times] {
 
 .container-mosaico {
     background-color: $preto;
+    // background-image: url(/assets/imgs/fio-background.png);
+    // background-repeat: no-repeat;
+    // background-position: bottom;
+    // background-size: 100%;
     width: 100%;
     min-width: 100%;
-    margin-top: 10vh;
     h2 {
         color: $preto!important;
         font-family: "SourceSansBold";
@@ -201,7 +219,7 @@ input[class=form-nome], [class=form-times] {
                 width: 100%;
             }
             .informacao-fas{
-                background: black;
+                // background: black;
                 width: 20%;
                 .info-pessoal{
                     display: flex;
@@ -255,11 +273,11 @@ input[class=form-nome], [class=form-times] {
             display: flex;
             position: absolute;
             right: 0;
-            left: 0;
+            // left: 0;
             .time {
                 position: relative;
                 .bloco-apresentador {
-                    position: absolute;
+                   width: 24%;
                     &:nth-of-type(2) {
                         left: 24vw;
                     }
@@ -343,6 +361,44 @@ input[class=form-nome], [class=form-times] {
         display: block;
         justify-content: space-between;}
   
+
+    .container-mosaico {
+        .caixa-mosaico {
+            width: auto;
+            margin: 0 auto;
+            padding: 13px;
+            .mosaico-fas {
+                display: flex;
+                justify-content: center;
+                .informacao-fas {
+                    width: 40%;
+                    padding-right: 2vw;
+                }
+            }
+        }
+    }
+
+    .container-form {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .texto-form {
+            padding-top: 8vh;
+            p {
+                color: #ffff;
+                font-family: "SourceSansRegular";
+                text-align: center;
+                font-size: 1em;
+                padding-top: 8vh;
+                padding: 8vh 4vw;
+            }
+        }
+    }
+
+     
 }
 @media (max-width: 600px) {
 
